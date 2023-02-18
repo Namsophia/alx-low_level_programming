@@ -3,14 +3,22 @@
  * main - prints alpha in lowere and upper case
  * Return: Always 0
  */
+
 int main(void)
 {
-	char la;
+	char c = 'a';
 
-	for (la = 'a'; la <= 'z'; la++)
+	while (c <= 'z')
 	{
-		if (la != 'e' && la != 'q')
-			putchar(la);
+		putchar(c);
+		c++;
+	}
+	c = 'A';
+
+	while (c <= 'Z')
+	{
+		putchar(c);
+		c++;
 	}
 	putchar('\n');
 	return (0);
