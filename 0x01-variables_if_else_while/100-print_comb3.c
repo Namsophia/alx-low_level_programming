@@ -7,22 +7,32 @@
  */
 int main(void)
 {
-	int c, i;
+	int c;
+	int d = 0;
 
-	for (c = 0; c <= 8; c++)
+	while (d < 10)
 	{
-		for (i = c + 1; i <= 9; i++)
+		c = 0;
+		while (c < 10)
 		{
-			putchar(c + '0');
-			putchar(i + '0');
-
-			if (c < 8 || i < 9)
+			if (d != c && d < c)
 			{
-				putchar(',');
-				putchar(' ');
+
+				putchar('0' + d);
+				putchar('0' + c);
+
+				if (c + d != 17)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
+			c++;
+
 		}
+		d++;
 	}
-	putchar('\n);
+	putchar('\n');
+
 	return (0);
 }
