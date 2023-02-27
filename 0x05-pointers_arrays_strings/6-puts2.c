@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * puts - prints every character of a string, starting with the
+ * puts2 - prints every character of a string, starting with the
  * first character
  * @str: pointer to the string to print
  * Return: void
  */
 
-void puts(char *str)
+void puts2(char *str)
 {
 	int i = 0;
 
@@ -14,7 +14,7 @@ void puts(char *str)
 	{
 		if (i % 2 == 0)
 		{
-			_putchar(srt[i]);
+			_putchar(str[i]);
 		}
 		i++;
 	}
