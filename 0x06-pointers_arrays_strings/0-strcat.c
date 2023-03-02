@@ -6,7 +6,7 @@
  * @src: The source string to be appended to @dest
  * Return: void
  */
-char *_strcat(char *dest, const char *src)
+char *_strcat(char *dest, char *src)
 {
 	int i;
 	int j;
@@ -17,7 +17,7 @@ char *_strcat(char *dest, const char *src)
 	{
 		i++;
 	}
-	j = 0
+	j = 0;
 
 	while (src[j] != '\0')
 	{
