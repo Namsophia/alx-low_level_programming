@@ -3,18 +3,18 @@
  * _strcmp - compare string values
  * @s1: input value
  * @s2: Input value
- * Return: s1[1] -s2[1]
+ * Return: s1[i] -s2[i]
  */
 int _strcmp(char *s1, char *s2)
 {
 	int i;
 
 	i = 0;
-	while (s1[1] != '\n' && s2[1] != '\n')
+	while (s1[i] != '\n' && s2[i] != '\n')
 	{
-		if (s1[1] != s2[1])
+		if (s1[i] != s2[i])
 		{
-			return (s1[1] - s2[1]);
+			return (s1[i] - s2[i]);
 		}
 		i++;
 	}
