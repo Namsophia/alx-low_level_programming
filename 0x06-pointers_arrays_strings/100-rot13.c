@@ -3,24 +3,25 @@
 
 /**
  * rot13 - Encodes a string using rot13
- * @str: The string to be encoded
+ * @s: The string to be encoded
  * Return: A pointer to the encoded string
  */
-char *rot13(char *str)
+char *rot13(char *s)
 {
 	int i;
 	int j;
-	char data[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdef
+	char data1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdef
 ghijklmnopqrstuvwxyz";
-	char datarot[] = NOPQRSTUVWXYZABCDEFGHIJKLMnopqr
+	char datarot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqr
 stuvwxyzabcdefghijklm";
-	for (i = 0; s [i] != '\0'; i++)
+
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		for (j = 0; j < 52; j++)
 		{
 			if (s[i] == data1[j])
 			{
-				s[i] = datarot[j];
+				s[i] = datarot[j]
 				break;
 			}
 		}
