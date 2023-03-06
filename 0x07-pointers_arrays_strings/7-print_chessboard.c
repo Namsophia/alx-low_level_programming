@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * _strstr - locates a substring
+ * print_chessboard - function that prints a chessboard
  * @a: array
  * Return: Always
  */
-void _strstr(char (*a)[8])
+void print_chessboard(char (*a)[8])
 {
 	int h;
 	int i;
