@@ -42,6 +42,3 @@ int square_root(int n_one, int root)
 
 	return (square_root(n_one, root + 1));
 }
-
-
-}
