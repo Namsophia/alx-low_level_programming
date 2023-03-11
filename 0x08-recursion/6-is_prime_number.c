@@ -18,8 +18,7 @@ int checkprime(int n, int counter)
 	}
 	return (checkprime(n, counter + 1));
 }
-int is_prime_number(int n);
-{
+int is_prime_number(int n)
 		int (counter = 3);
 
 		if (n <= 1)
