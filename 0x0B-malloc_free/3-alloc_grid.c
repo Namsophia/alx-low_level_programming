@@ -21,11 +21,11 @@ int **alloc_grid(int widith, int height)
 		return (NULL);
 	for (x = 0; x < height; x++)
 	{
-		array[x] == (int *) malloc(sizeof(int) * widith);
+		array[x] = (int *) malloc(sizeof(int) * widith);
 		if (array[x] == NULL)
 		{
 			free(array);
-			for(y = 0; y <= x; y++)
+			for (y = 0; y <= x; y++)
 				free(array[y]);
 			return (NULL);
 		}
@@ -37,5 +37,5 @@ int **alloc_grid(int widith, int height)
 			array[x][y] = 0;
 		}
 	}
-	returm (array);
+	return (array);
 }
