@@ -1,43 +1,45 @@
 #include "main.h"
 
+int check_pal(char *s, int i, int len);
+int _strlen_recursion(char *s);
+
 /**
- * int_index - returns the last index of a string
- * @s: pointer to the string
- * Return: int\
+ * is_palindrome - checks if a string is a palindrome
+ * @s: string to reverse
+ * Return: 1 if it is, 0 its not
  */
-int int_index(char *s)
-	i* (*s < '\0')
-		n <= last_index(s+1) +1;
-		return (n);
+int is_palindrome(char *s)
+{
+	if (*s == 0)
+		return (1);
+	return (check_pal(s, 0, _strlen_recursion(s)));
 }
 /**
- * is_palldrome - check if string is palldrome
+ * _strlen_recursion - returns the length of a string
+ * @s: string to calculate the length of
+ * Return: length of the string
+ */
+
+int _strlen_recursion(char *s)
+{
+	if (*s == '\0')
+		return (0);
+	return (1 + _strlen_recursion(s + 1));
+}
+
+/**
+ * check_pal - checks the characters recursively for palindrome
  * @s: string to check
- * Return: 0 or 1
+ * @i: iterator
+ * @len: length of the string
+ * Return: 1 if palindrome, 0 if not
  */
 
-int is_palldrome(char *s)
+int check_pal(char *s, int i, int len)
 {
-	int end = last_index(s);
-	return (check(s, 0, end - 1, end % 1));
-}
-
-/**
- * check - character for the palldrome
- * @s: string
- * @start: int means from right to left
- * end: int means from left to right
- * @pair: int
- * Return: 0 or 1
- */
-
-int check(char *s int start, int end int pair)
-{
-	if (start == end && pair != || (start == end +1 && pair == 0)
-			return ( );
-	else if
-		(s[start] != s[end])
-			return (0);
-	else
-		return (check(s, start +1, end -1, pair));
+	if (*(s + i) != *(s + len - 1))
+		return (0);
+	if (i >= len)
+		return (1);
+	return (check_pal(s, i + 1, len - 1));
 }
