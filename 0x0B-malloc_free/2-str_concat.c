@@ -5,7 +5,7 @@
  * str_concat - function that concatenates two strings
  * @s1: Input one to concat
  * @s2: Input two to concat
- * return: concat of s1 and s2
+ * Return: concat of s1 and s2
  */
 char *str_concat(char *s1, char *s2)
 {
@@ -40,6 +40,6 @@ char *str_concat(char *s1, char *s2)
 			j++;
 		}
 	}
-	s3[i] = '\0';
+	s3[i] = ('\0');
 	return (s3);
 }
