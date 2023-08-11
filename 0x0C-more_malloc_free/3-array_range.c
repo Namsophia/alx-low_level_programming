@@ -9,6 +9,7 @@
  * NULL if malloc fails
  * NULL if min > max
  */
+
 int *array_range(int min, int max)
 {
 	int range, i;
@@ -23,7 +24,7 @@ int *array_range(int min, int max)
 		return (NULL);
 	for (i = 0; i < range; i++)
 	{
-		*(p + i) = min + 1;
+		*(p + i) = min + i;
 	}
 	return (p);
 }
