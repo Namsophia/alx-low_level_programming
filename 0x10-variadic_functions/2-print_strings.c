@@ -4,10 +4,10 @@
 
 /**
  * print_strings - Prints strings, followed by anew line
- * @seperator: The string to be printed between strings
+ * @separator: The string to be printed between strings
  * @n: The number of strings passed to the function
  * @...: A variable number of strings to be printed
- * Description: if seperator is NULL, it is not printed
+ * Description: if separator is NULL, it is not printed
  * if one of the strings if NULL, (nil) is printed instead.
  */
 void print_strings(const char *separator, const unsigned int n, ...)
@@ -26,10 +26,9 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("(nil)");
 		else
 			printf("%s", str);
-		if (index != (n - 1) && seperator != NULL)
+		if (index != (n - 1) && separator != NULL)
 			printf("%s", separator);
 	}
 	printf("\n");
-	
 	va_end(strings);
 }
