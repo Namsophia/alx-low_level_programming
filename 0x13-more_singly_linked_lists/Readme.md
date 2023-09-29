@@ -1,1 +1,0 @@
-MOre singly linked
